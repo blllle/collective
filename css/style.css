@@ -10,9 +10,6 @@ h1 {
   color: white;
   font-size: 80px;
   font-weight: 500;
-  position: absolute;
-  top: 5vh;
-  left: 5vw;
 }
 
 h2 {
@@ -54,36 +51,19 @@ video {
   min-width: 100vw;
   min-height: 100vh;
   width: auto;
-  z-index: -2;
+  z-index: -1;
   background-size: cover;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
 
-.text-overlay {
-  position: relative;
-  max-width: 900px;
-  margin: 0 50px 50px;
-}
-
 .text-overlay h1 {
   mix-blend-mode: overlay;
   z-index: 2;
-}
-
-@media screen and (max-width: 500px) {
-  div {
-    width: 70%;
-  }
-}
-
-@media screen and (max-device-width: 800px) {
-  html {
-    background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
-  }
-  #bgvid {
-    display: none;
-  }
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  max-width: 900px;
 }
 
 .header {
