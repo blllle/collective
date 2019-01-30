@@ -66,7 +66,7 @@ video {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  color: white;
+  color: #FAF9F6;
   z-index: 2;
   height: 70px;
   width: 100%;
@@ -76,12 +76,12 @@ video {
 }
 
 .active {
-  color: black;
+  color: #121524;
   background-color: white;
   -webkit-box-shadow: 0 0 8px rgba(6, 8, 14, 0.2);
   box-shadow: 0 0 8px rgba(6, 8, 14, 0.2);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header-container {
@@ -96,6 +96,18 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-toggle-svg {
+  fill: #FAF9F6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  fill: #121524;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 section {
@@ -117,22 +129,22 @@ section {
   font-weight: 500;
 }
 
-.two {
+.navy-block {
   background-color: #121524;
   color: grey;
   font-size: 40px;
   font-weight: 400;
 }
 
-.two .content {
+.navy-block .content {
   text-align: center;
 }
 
-.two h2 {
+.navy-block h2 {
   color: #FAF9F6;
 }
 
-.two a {
+.navy-block a {
   color: #FAF9F6;
 }
 
@@ -177,6 +189,58 @@ section {
 .image img:hover {
   -webkit-filter: none;
           filter: none;
+}
+
+.services-block {
+  background-color: #FAF9F6;
+  text-align: center;
+  padding: 56px 0;
+}
+
+.services-block .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: auto;
+}
+
+.service {
+  padding: 28px;
+  width: 300px;
+}
+
+.service h3 {
+  color: #121524;
+  margin-top: 32px;
+}
+
+.service p {
+  color: grey;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.service-icon {
+  max-height: 100px;
+}
+
+.service-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+
+.service-icon:hover svg path {
+  fill: red;
 }
 
 .nav-menu {
