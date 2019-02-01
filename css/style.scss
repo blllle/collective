@@ -109,7 +109,7 @@ video {
 }
 
 // sections //
-section {
+.section-flex {
   height: 100vh;
   display: flex;
 }
@@ -139,6 +139,7 @@ section {
   }
   a {
     color: $cream;
+    font-weight: 400;
   }
 }
 
@@ -147,13 +148,19 @@ section {
   color: grey;
   font-size: 24px;
   font-weight: 400;
-  text-align: left;
+  height: 900px;
   .content {
     display: flex;
     justify-content: space-around;
   }
   .text {
     width: 400px;
+  }
+  h2 {
+    text-align: center;
+    padding-top: 120px;
+    margin: 0 0 104px;
+    color: $navy;
   }
   h3 {
     color: $navy;
@@ -209,6 +216,26 @@ section {
     svg path {
       fill: red;
     }
+  }
+}
+
+.placeholder {
+  text-align: center;
+  color: $navy;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inquire {
+  height: 450px;
+  background-color: $navy;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    color: $cream;
+    font-size: 56px;
   }
 }
 
@@ -305,5 +332,12 @@ footer {
   img {
     height: 20px;
     padding: 0 16px;
+  }
+}
+
+// Mobile
+@media (max-width: 770px) {
+  html {
+    display: none;
   }
 }

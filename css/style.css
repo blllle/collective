@@ -110,7 +110,7 @@ video {
   transition: all 0.3s ease;
 }
 
-section {
+.section-flex {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,6 +146,7 @@ section {
 
 .navy-block a {
   color: #FAF9F6;
+  font-weight: 400;
 }
 
 .three {
@@ -153,7 +154,7 @@ section {
   color: grey;
   font-size: 24px;
   font-weight: 400;
-  text-align: left;
+  height: 900px;
 }
 
 .three .content {
@@ -166,6 +167,13 @@ section {
 
 .three .text {
   width: 400px;
+}
+
+.three h2 {
+  text-align: center;
+  padding-top: 120px;
+  margin: 0 0 104px;
+  color: #121524;
 }
 
 .three h3 {
@@ -241,6 +249,33 @@ section {
 
 .service-icon:hover svg path {
   fill: red;
+}
+
+.placeholder {
+  text-align: center;
+  color: #121524;
+  background-color: white;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.inquire {
+  height: 450px;
+  background-color: #121524;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.inquire a {
+  color: #FAF9F6;
+  font-size: 56px;
 }
 
 .nav-menu {
@@ -347,5 +382,11 @@ footer {
 .footer-links-social img {
   height: 20px;
   padding: 0 16px;
+}
+
+@media (max-width: 770px) {
+  html {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
